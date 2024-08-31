@@ -1,0 +1,119 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.close {
+  font-size: 28px;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.btns-list {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-btn {
+  background: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: gray;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.details {
+  background: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: gray;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 450;
+  box-sizing: border-box;
+}
+
+.nav-btn:hover {
+  background-color: #faf0ff;
+  border-radius: 8px;
+  color: #9a56e8;
+}
+
+.selected {
+  background-color: #faf0ff;
+  border-radius: 8px;
+  color: #9a56e8;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::after {
+  content: "";
+  width: 12px;
+  height: 6px;
+  background: url("https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg")
+    no-repeat;
+  background-size: cover;
+  margin-left: 0.75em;
+  transition: 0.2s;
+  margin-right: 10px;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 600px) {
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    align-items: flex-start;
+  }
+  .close {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 220px;
+    height: 100vh;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1400px) {
+  .sidebar {
+    width: 260px;
+    height: 100vh;
+    align-items: flex-start;
+  }
+  .nav-btn {
+    font-size: 16px;
+  }
+  .details {
+    font-size: 16px;
+  }
+}

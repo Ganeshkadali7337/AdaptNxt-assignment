@@ -1,0 +1,36 @@
+.pi-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.legend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.pi-dot1 {
+  font-size: 22px;
+  vertical-align: middle;
+  color: #fa7e7e;
+}
+
+.pi-dot {
+  font-size: 22px;
+  vertical-align: middle;
+  color: #2cded5;
+}
+
+@media (max-width: 350px) {
+  .legend-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

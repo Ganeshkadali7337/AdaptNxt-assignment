@@ -1,0 +1,31 @@
+.para {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.dot1 {
+  color: #f19336;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.dot2 {
+  color: #47a5a8;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.dot3 {
+  color: black;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.label {
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
